@@ -33,7 +33,7 @@ Vagrant.configure(2) do |config|
     echo Downloading Pig...
     wget -q -O #{PIG_TMP_FILE} #{PIG_URL}
     echo Installing Pig...
-    if [ -d "#{PIG_LOCAL_DIR}" ]
+    if [ -d #{PIG_LOCAL_DIR} ]
     then
       rm -rf #{PIG_LOCAL_DIR_OLD}
       mv #{PIG_LOCAL_DIR} #{PIG_LOCAL_DIR_OLD}
