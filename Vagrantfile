@@ -40,6 +40,7 @@ Vagrant.configure(2) do |config|
     fi
     tar zxf #{PIG_TMP_FILE} -C #{PIG_LOCAL_DIR_PARENT}
     mv #{PIG_LOCAL_DIR_NEW} #{PIG_LOCAL_DIR}
+    rm -f #{PIG_TMP_FILE}
     echo Setting JAVA_HOME variable...
     echo >> ~vagrant/.bashrc
     echo '# Enable Apache Pig' >> ~vagrant/.bashrc
