@@ -1,7 +1,7 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-PIG_VERSION = "0.15.0"
+PIG_VERSION = "0.16.0"
 PIG_DIR = "pig-#{PIG_VERSION}"
 PIG_FILE = "#{PIG_DIR}.tar.gz"
 PIG_URL_DIR = "http://www.eu.apache.org/dist/pig/latest"
