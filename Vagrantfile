@@ -39,5 +39,7 @@ Vagrant.configure(2) do |config|
     echo '# Enable Apache Pig' >> ~vagrant/.bashrc
     echo "export JAVA_HOME=$(readlink -f /usr/bin/java | sed \"s:bin/java::\")" >> ~vagrant/.bashrc
     echo 'export PATH=$PATH:#{PIG_LOCAL_DIR_BIN}' >> ~vagrant/.bashrc
+	echo Adding path to the host system
+	ln -sf /vagrant ~vagrant/host
   SHELL
 end
